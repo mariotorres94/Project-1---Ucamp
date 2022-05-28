@@ -13,6 +13,9 @@
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500&family=IBM+Plex+Sans:wght@100;200;300;400;500;600&display=swap"
+            rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
         <title>Pet Shop</title>
     </head>
@@ -30,11 +33,10 @@
                 </label>
                 <nav class="header__contenedor--navegacion">
                     <ul>
-                        <li><img src="/icons/user.svg" alt="User">Login</li>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -45,34 +47,37 @@
                 <div class="section__img">
                     <img src="/images/img1.jpg" alt="">
                 </div>
-                <div class="section__text">
-                    <h1 class="pb-2">Bienvenidos a MAYU Pet-Shop</h1>
-                    <p>En MAYU encontrará productos de la mejor calidad en todas
-                        nuestras tallas.
-                        Todos nuestros modelos son antialergicos y suaves al
-                        contacto de tu engreido.</p>
+                <div class="section__formulario--1">
+                    <div class="section__text">
+                        <h1 class="pb-2">Bienvenidos a MAYU Pet-Shop</h1>
+                        <p>En MAYU encontrará productos de la mejor calidad en
+                            todas
+                            nuestras tallas.
+                            Todos nuestros modelos son antialergicos y suaves al
+                            contacto de tu engreido.</p>
+                    </div>
+                    <form class="section__formulario">
+                        <h2 id="contact">Contact</h2>
+                        <div>
+                            <input type="text" placeholder="Ingrese Nombre Completo">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Ingrese Correo">
+                        </div>
+                        <div>
+                            <textarea name="" id="" cols="100" rows="5"
+                                placeholder="Ingrese mensaje"></textarea>
+                        </div>
+                        <div>
+                            <button>ENVIAR</button>
+                        </div>
+                    </form>
                 </div>
-                <form class="section__formulario">
-                    <div>
-                        <input type="text" placeholder="Ingrese Nombre
-                            Completo">
-                    </div>
-                    <div>
-                        <input type="email" placeholder="Ingrese Correo">
-                    </div>
-                    <div>
-                        <textarea name="" id="" cols="100" rows="5"
-                            placeholder="Ingrese mensaje"></textarea>
-                    </div>
-                    <div>
-                        <button>ENVIAR</button>
-                    </div>
-                </form>
             </div>
         </section>
 
         <main class="main main__contenedor">
-            <h2>NUESTRO PRODUCTOS</h2>
+            <h2 id="products">NUESTRO PRODUCTOS</h2>
             <div class="main__productos">
                 <div class="main__productos--contenido">
                     <div class="main__productos--img">
@@ -108,6 +113,22 @@
                 </div>
                 <div class="main__productos--contenido">
                     <div class="main__productos--img">
+                        <img src="/images/traje5.jfif" alt="">
+                    </div>
+                    <div class="main__productos--tallas">
+                        <h4>Tallas</h4>
+                        <ul>
+                            <li>Pequeño</li>
+                            <li>Mediano</li>
+                            <li>Grande</li>
+                        </ul>
+                    </div>
+                    <div class="main__productos--button">
+                        <button>COMPRAR</button>
+                    </div>
+                </div>
+                <div class="main__productos--contenido">
+                    <div class="main__productos--img">
                         <img src="/images/traje3.jfif" alt="">
                     </div>
                     <div class="main__productos--tallas">
@@ -123,16 +144,16 @@
                     </div>
                 </div>
             </div>
-            <div class="main__productos--button">
+            <div class="main__productos--button main__button--vermas">
                 <button>VER MÁS</button>
             </div>
             <div class="blog">
-                <div class="blog__conetendor">
-                    <h2>Nuestro Blog</h2>
-                    <div class="blog__conetendor--flex">
+                <div class="blog__contenedor">
+                    <h2 id="blog">Nuestro Blog</h2>
+                    <div class="blog__contenedor--flex">
                         <div class="blog__contenido">
                             <div class="blog__contenido--text">
-                                <h5>Consejos y Cuidado</h5>
+                                <h5>Consejos</h5>
                                 <p>Encuentra los mejores tips y consejos para
                                     brindarle
                                     una buena calidad de vida a tu compañero de
@@ -143,20 +164,19 @@
                                 <img src="/images/consejos.jpg" alt="">
                             </div>
                         </div>
-                        <div class="">
+                        <div class="blog__contenido">
                             <div class="blog__contenido--text">
                                 <h5>Noticias</h5>
                                 <p>Descubre las ultimas novedades de las
-                                    mascotas,
-                                    además de informacion útil para nuestro
-                                    pequeños
-                                    amigos.</p>
+                                    mascotas, además de informacion útil para
+                                    nuestro
+                                    pequeños amigos.</p>
                             </div>
                             <div class="blog__contenido--img">
                                 <img src="/images/noticias.jpg" alt="">
                             </div>
                         </div>
-                        <div class="">
+                        <div class="blog__contenido">
                             <div class="blog__contenido--text">
                                 <h5>Adiestramiento</h5>
                                 <p>Aprende más sobre adiestramiento canino
@@ -173,5 +193,30 @@
                 </div>
             </div>
         </main>
+
+        <footer class="footer">
+            <div class="footer__text">
+                <p>&copy; 2022 - MAYU PET - SHOP</p>
+            </div>
+            <div class="footer__icons">
+                <figure>
+                    <a href=""><img src="/icons/facebook-circular-logo.png"
+                            alt="Facebook"></a>
+                </figure>
+                <figure>
+                    <a href=""><img src="/icons/logotipo-de-instagram.png"
+                            alt="Instagram"></a>
+                </figure>
+                <figure>
+                    <a href=""><img src="/icons/spotify.png" alt="Spotify"></a>
+                </figure>
+                <figure>
+                    <a href=""><img src="/icons/telegram.png" alt="Telegram"></a>
+                </figure>
+                <figure>
+                    <a href=""><img src="/icons/twitter.png" alt="Twitter"></a>
+                </figure>
+            </div>
+        </footer>
     </body>
 </html>
