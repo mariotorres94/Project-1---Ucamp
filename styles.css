@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* MOBILE */
+.header {
+    padding: 0 16px 0 19px;
+    height: 70px;
+}
+
+.header__contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: var(--white);
+    z-index: 1000;
+    width: 100%;
+}
+
+.header__contenedor--img {
+    width: 100px;
+    height: 70px;
+}
+
+.header__contenedor--img>img {
+    width: 100px;
+    height: 70px;
+}
+
+.header__contenedor--menu {
+    position: relative;
+}
+
+.header__contenedor--input {
+    display: none;
+}
+
+.header__contenedor--label {
+    position: relative;
+    cursor: pointer;
+    height: 10px;
+    width: 18px;
+    display: block;
+}
+
+.header__contenedor--barra,
+.header__contenedor--barra::before,
+.header__contenedor--barra::after {
+    content: '';
+    width: 18px;
+    height: 2px;
+    background-color: black;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.header__contenedor--barra::before {
+    top: 4px;
+}
+
+.header__contenedor--barra::after {
+    top: 8px;
+}
+
+.header__contenedor--navegacion {
+    position: absolute;
+    top: 25px;
+    left: 40px;
+    transition: all 0.5s ease-in-out;
+}
+
+.header__contenedor--navegacion {
+    width: 100vw;
+}
+
+.header__contenedor--navegacion li {
+    padding: 12px 217px 12px 19px;
+    background-color: var(--background);
+}
+
+.header__contenedor--navegacion a {
+    font-size: 16px;
+    font-family: 'IBM Plex Mono', monospace;
+    color: var(--white);
+    letter-spacing: 0;
+    line-height: 28px;
+    text-decoration: none;
+}
+
+.header__contenedor--input:checked~.header__contenedor--navegacion {
+    transition: all 0.5s ease-in-out;
+    left: calc(-100vw + 34px);
+}
+
+.header__contenedor--input:checked~label>.header__contenedor--barra {
+    transform: translateY(5px) rotate(45deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.header__contenedor--input:checked~label>.header__contenedor--barra::after {
+    transform: translateY(-8px) rotate(90deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.header__contenedor--input:checked~label>.header__contenedor--barra::before {
+    transform: translateY(-13px) rotate(90deg);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.header__contenedor--navegacion a:active {
+    color: var(--active);
+    text-decoration: line-through;
+}
+
+.header__contenedor--navegacion a:hover {
+    color: var(--agua);
+    text-decoration: line-through;
+}
