@@ -175,3 +175,57 @@ img {
     border: none;
     padding: 10px;
 }
+
+/* .section__formulario button:hover {
+    background: linear-gradient(225deg, #d3e4f2 35%, #f8979e 100%);
+    color: var(--white);
+} */
+
+.main {
+    padding: 20px;
+    text-align: center;
+}
+
+.main h2{
+    padding: 20px;
+}
+
+.main__productos {
+    display: block;
+}
+
+.main__productos--contenido {
+    border: 1px solid #eee;
+    box-shadow: 5px 5px 10px rgb(175, 175, 175);
+    margin: 40px 0;
+    border-radius: 15px;
+}
+
+.main__productos--img {
+    width: 100%;
+}   
+
+.main__productos--img > img{
+    border-radius: 15px 15px 0 0;
+}
+
+.main__productos--tallas h4{
+    padding: 10px;
+}
+
+.main__productos--tallas ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.main__productos--button{
+    padding: 20px;
+}
+
+.main__productos--button button{
+    border: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+}
