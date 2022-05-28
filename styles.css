@@ -229,3 +229,25 @@ img {
     padding: 15px;
     border-radius: 10px;
 }
+
+.blog{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(212, 229, 243, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.blog__contenido--text{
+    padding: 35px 0 0 0;
+}
+
+.blog__contenido--text h5{
+    text-transform: uppercase;
+    text-shadow: 2px 3px 5px;
+}
+
+.blog__contenido--img img{
+    border-radius: 15px;
+    filter: opacity(0.75);
+}
+
