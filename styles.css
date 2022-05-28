@@ -75,9 +75,16 @@ img {
 
 .header__contenedor--navegacion {
     position: absolute;
-    top: 25px;
+    top: 40px;
     left: 40px;
     transition: all 0.5s ease-in-out;
+    background-color: rgba(212, 229, 243, 0.6);
+}
+
+.header__contenedor--navegacion ul>li:nth-child(1) img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
 }
 
 .header__contenedor--navegacion {
@@ -85,12 +92,12 @@ img {
 }
 
 .header__contenedor--navegacion li {
-    padding: 12px 217px 12px 19px;
+    padding: 13.6px 217px 12px 19px;
     background-color: var(--background);
 }
 
 .header__contenedor--navegacion a {
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'IBM Plex Mono', monospace;
     color: var(--white);
     letter-spacing: 0;
@@ -127,4 +134,44 @@ img {
 .header__contenedor--navegacion a:hover {
     color: var(--agua);
     text-decoration: line-through;
+}
+
+.section {
+    padding: 29px 0;
+    margin-top: 40px;
+}
+
+.section__text {
+    padding: 20px 20px 10px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.section__formulario {
+    text-align: center;
+}
+
+.section__formulario div {
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.section__formulario div>input {
+    width: 100%;
+    padding: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    outline: none;
+}
+
+.section__formulario div>textarea {
+    max-width: 100%;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.section__formulario button {
+    width: 100%;
+    border: none;
+    padding: 10px;
 }
