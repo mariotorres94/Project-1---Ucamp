@@ -9,7 +9,7 @@
     --background: #0000EC;
     --white: #FFFFFF;
     --black: #060A24;
-    --agua: #00F3BB;
+    --agua: #335979;
     --active: rgba(6, 10, 36, 0.56);
 }
 
@@ -114,6 +114,7 @@ html {
     letter-spacing: 0;
     line-height: 28px;
     text-decoration: none;
+    color: black;
 }
 
 .header__contenedor--input:checked~.header__contenedor--navegacion {
