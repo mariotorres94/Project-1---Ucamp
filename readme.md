@@ -4,8 +4,8 @@
 * [Link a la demo](https://mariotorres94.github.io/Project-1---Ucamp/)
 
 ## Tecnologías y recursos utilizados 
-* [HTML](https://reactjs.org/)
-* [CSS](https://reactjs.org/docs/hooks-intro.html)
+* [HTML]
+* [CSS]
 * [Google Fonts](https://fonts.google.com/)
 
 ## Features Solicitadas
